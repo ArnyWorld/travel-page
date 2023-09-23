@@ -1,0 +1,74 @@
+.form-container{
+  display: grid;
+  grid-template-areas: "checkIn checkIn" "checkOut checkOut" "adults children" "search search";
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.form-control{
+  display: flex;
+  flex-direction: column;
+}
+.form-label{
+  font-family: var(--primary-font);
+  color: var(--gray-color);
+  font-size: 1rem;
+}
+.form-input{
+  padding: 0.8rem 0.5rem;
+  border: 1px solid var(--gray-color);
+  background-color: transparent;
+}
+.form-control:nth-child(1){
+  grid-area: checkIn;
+}
+.form-control:nth-child(2){
+  grid-area: checkOut;
+}
+.form-control:nth-child(3){
+  grid-area: adults;
+}
+.form-control:nth-child(4){
+  grid-area: children;
+}
+[type="submit"]{
+  grid-area: search;
+  background-color: var(--primary-color);
+  color:var(--white-color);
+  font-family: var(--primary-font);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background-color .5s ease;
+  padding: 0.5rem 0;
+}
+
+[type="submit"]:hover{
+  background-color: #14d1df;
+}
+
+/*desktop first*/
+@media(768px <= width <1200px ){
+  .form-container{
+    display: grid;
+    grid-template-areas: "checkIn checkOut adults children search";
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  [type="submit"]{
+    padding: 0.1rem 0;
+  }
+}
+@media (width>=1200px){
+  .form-container{
+    display: grid;
+    grid-template-areas: "checkIn checkOut adults children search";
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  [type="submit"]{
+    padding: 0rem 0;
+  }
+}
+

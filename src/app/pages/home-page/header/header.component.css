@@ -1,0 +1,9 @@
+.header{
+  background-image: url(/assets/homeHeaderr.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  z-index: -1;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,68 @@
+.reviews{
+  background-image: linear-gradient(to left, rgba(0,0,0,.6), rgba(0,0,0,.6)), url(/assets/parallax.jpg);
+  padding: 2.5rem 0;
+  margin-bottom: 1.5rem;
+}
+.review-container{
+  display: grid;
+  gap: 1rem;
+  grid-template-areas: "review1" "review2" "review3";
+}
+.review{
+  background-color: var(--white-color);
+  padding: 1rem;
+}
+.review:nth-child(1){
+  grid-area: review1;
+}
+.review:nth-child(2){
+  grid-area: review2;
+}
+.review:nth-child(3){
+  grid-area: review3;
+}
+.title{
+  color: var(--white-color);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.review-top{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.review-title{
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-weight: 300;
+}
+.review-name{
+  width: 80%;
+}
+.review-image{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+}
+.review-countrie{
+  text-align: right;
+  display: block;
+  color: var(--gray-color);
+  font-family: var(--secondary-font);
+}
+
+/*desktop first*/
+@media(768px <= width <1200px ){
+  .review-container{
+    grid-template-areas: "review1 review2" "review3 review3";
+  }
+
+}
+@media (width>=1200px){
+  .review-container{
+    grid-template-areas: "review1 review2 review3";
+  }
+}
