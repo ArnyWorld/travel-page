@@ -1,0 +1,59 @@
+<nav class="navbar">
+  <div class="networks">
+    <div class="container networks-container">
+      <ul class="networks-navigation">
+        <li class="network-navigation">
+          <a href="" class="network-navigation-link">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </li>
+        <li class="network-navigation">
+          <a href="" class="network-navigation-link">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
+        <li class="network-navigation">
+          <a href="" class="network-navigation-link">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="navigation-contacts">
+        <li class="navigation-contact">
+          <i class="fa-solid fa-phone"></i> (480) 555-0103
+        </li>
+        <li class="navigation-contact">
+          <i class="fa-solid fa-envelope"></i> travel.arni@example.com
+        </li>
+      </ul>
+    </div>
+    <!--container-->
+  </div>
+  <!--networks-->
+  <div class="navigation container">
+    <div class="navigation-top">
+      <a routerLink="/home" class="logo"
+        ><span>T</span>RAVEL<span>A</span>RNI</a
+      >
+      <i class="fa-solid fa-bars movil" (click)="showwMenu()"></i>
+    </div>
+    <ul class="navigation-container" #menu>
+      <li class="navigation-list">
+        <a routerLink="/home" class="navigation-link">Home</a>
+      </li>
+      <li class="navigation-list">
+        <a routerLink="/activities" class="navigation-link">Activities</a>
+      </li>
+      <li class="navigation-list">
+        <a href="" class="navigation-link">About</a>
+      </li>
+      <li class="navigation-list">
+        <a href="" class="navigation-link">Contact</a>
+      </li>
+      <li class="navigation-list">
+        <a href="" class="navigation-link">Blog</a>
+      </li>
+    </ul>
+  </div>
+  <!--navigation-->
+</nav>
