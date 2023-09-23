@@ -1,0 +1,14 @@
+.activity-image{
+  width: 100%;
+}
+.activity{
+  border-bottom: 1px solid var(--gray-color);
+  margin-bottom: 1.5rem;
+}
+
+@media (width>=1200px){
+  .activities{
+    width: 50%;
+    margin: 0 auto;
+  }
+}
