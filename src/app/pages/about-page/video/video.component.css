@@ -1,0 +1,42 @@
+.parallax{
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1.5rem;
+  &::after{
+    content: 'WE ARE TRUSTED AND PROFESSIONAL TRAVEL, TOUR AGENCY';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    font-family: var(--primary-font);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+video{
+    width: auto;
+    display: block;
+    object-position: center;
+}
+}
+/*desktop first*/
+@media(768px <= width <1200px ){
+
+
+}
+@media (width>=1200px){
+  .parallax{
+    width: 100%;
+    height: 650px;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+  }
+}

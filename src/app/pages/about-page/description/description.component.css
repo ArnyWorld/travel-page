@@ -1,0 +1,13 @@
+.description{
+  margin-bottom: 1rem;
+}
+.description-image{
+  width: 100%;
+}
+
+@media(width>= 1200px){
+  .description-container{
+    width: 50%;
+    margin: 0 auto;
+  }
+}

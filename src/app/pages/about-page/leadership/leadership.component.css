@@ -1,0 +1,87 @@
+.leadership{
+  mix-blend-mode: 1.5REM;
+}
+.personal-container{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+}
+.title{
+  margin-bottom: 1.5rem;
+}
+
+.personal{
+  margin-bottom: 1rem;
+}
+.subtitle{
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 0.7rem;
+}
+.personal-positiion{
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  color: var(--gray-color);
+  margin-bottom: 1rem;
+  font-family: var(--secondary-font);
+}
+.personal-image{
+  width: 250px;
+  height: 250px;
+  border-radius:50% ;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  object-position: top;
+}
+
+.networks-navigation{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 1.3rem;
+}
+.network-navigation-link{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform .5s ease;
+}
+.network-navigation-link:hover{
+  transform: scale(1.1);
+}
+.network-navigation:nth-child(1) .network-navigation-link {
+  background-color: #3B5998;
+}
+.network-navigation:nth-child(2) .network-navigation-link{
+  background-color: #00ACED;
+}
+.network-navigation:nth-child(3) .network-navigation-link{
+  background-color: #FF3F67;
+}
+.network-navigation-link i{
+  color: var(--white-color);
+}
+
+
+/*desktop first*/
+@media(768px <= width <1200px ){
+  .personal-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+@media (width>=1200px){
+  .leadership-container{
+    width: 50%;
+    margin: 0 auto;
+  }
+  .personal-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
