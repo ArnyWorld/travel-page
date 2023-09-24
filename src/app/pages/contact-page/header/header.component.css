@@ -1,0 +1,23 @@
+.headerContact{
+  background-image: url(/assets/blog2.jpg);
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 2rem;
+}
+.headerContact::before{
+  content: 'CONTACT';
+  position: absolute;
+  top: 60%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
