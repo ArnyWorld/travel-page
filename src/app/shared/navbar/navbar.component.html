@@ -35,23 +35,33 @@
       <a routerLink="/home" class="logo"
         ><span>T</span>RAVEL<span>A</span>RNI</a
       >
-      <i class="fa-solid fa-bars movil" (click)="showwMenu()"></i>
+      <i class="fa-solid fa-bars movil" (click)="showMenu()"></i>
     </div>
     <ul class="navigation-container" #menu>
       <li class="navigation-list">
-        <a routerLink="/home" class="navigation-link">Home</a>
+        <a routerLink="/home" class="navigation-link" (click)="showMenu()"
+          >Home</a
+        >
       </li>
       <li class="navigation-list">
-        <a routerLink="/activities" class="navigation-link">Activities</a>
+        <a routerLink="/activities" class="navigation-link" (click)="showMenu()"
+          >Activities</a
+        >
       </li>
       <li class="navigation-list">
-        <a href="" class="navigation-link">About</a>
+        <a routerLink="/about" class="navigation-link" (click)="showMenu()"
+          >About</a
+        >
       </li>
       <li class="navigation-list">
-        <a href="" class="navigation-link">Contact</a>
+        <a routerLink="/contact" class="navigation-link" (click)="showMenu()"
+          >Contact</a
+        >
       </li>
       <li class="navigation-list">
-        <a href="" class="navigation-link">Blog</a>
+        <a routerLink="/blog" class="navigation-link" (click)="showMenu()"
+          >Blog</a
+        >
       </li>
     </ul>
   </div>

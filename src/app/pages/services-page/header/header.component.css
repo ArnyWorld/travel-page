@@ -10,7 +10,7 @@
 .headerActivities::before{
   content: 'ACTIVITIES';
   position: absolute;
-  top: 60%;
+  top: 65%;
   left: 0;
   width: 100%;
   height: 100%;

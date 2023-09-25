@@ -8,7 +8,7 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 export class NavbarComponent {
   @ViewChild("menu") menu!:ElementRef;
 
-  showwMenu(){
+  showMenu(){
     if(this.menu.nativeElement.classList.contains("navigation-container-active")){
       this.menu.nativeElement.classList.remove("navigation-container-active");
     }else{

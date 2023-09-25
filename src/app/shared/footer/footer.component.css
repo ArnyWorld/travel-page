@@ -1,12 +1,13 @@
 .footer{
   display: flex;
   justify-content: center;
+  padding: 1.5rem 0.5rem;
 }
 .footer-container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 350px;
+  width: 100%;
 }
 .logo span{
   color: var(--primary-color);
@@ -59,7 +60,7 @@
 .navigation-link{
   color: var(--dark-color);
   font-family: var(--primary-font);
-  font-weight: bold;
+  font-weight: lighter;
   font-size: 1.1rem;
 }
 .copy{
@@ -73,11 +74,17 @@
     width: 45px;
     height: 45px;
   }
+  .footer-container{
+    width: 50%;
+  }
 }
 /*desktop first*/
 @media(768px <= width <1200px ){
   .network-navigation-link{
     width: 40px;
     height: 40px;
+  }
+  .footer-container{
+    width: 50%;
   }
 }

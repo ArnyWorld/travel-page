@@ -17,19 +17,17 @@
 .networks-navigation{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1rem;
 }
 .navigation-contacts{
-  display: flex;
-  justify-content: space-evenly;
+  display: none;
 }
 .navigation-contact{
   font-family: var(--secondary-font);
 }
 .network-navigation-link{
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -99,6 +97,7 @@
   font-size: 1.1rem;
 }
 
+
 /*desktop first*/
 @media(768px <= width <1200px ){
   .networks-container{
@@ -111,7 +110,9 @@
     margin-bottom: 0;
   }
   .navigation-contacts{
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
     justify-content: space-between;
   }
   .navigation-container-active{
@@ -134,7 +135,9 @@
     margin-bottom: 0;
   }
   .navigation-contacts{
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
   .movil{
     display: none;

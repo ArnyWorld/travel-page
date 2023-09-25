@@ -62,7 +62,6 @@
   .blog:nth-child(even) .blog-content{
     order: 1;
   }
-
 }
 @media (width>=1200px){
   .blog:nth-child(even) .blog-image{
