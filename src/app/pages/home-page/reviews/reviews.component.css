@@ -1,5 +1,5 @@
 .reviews{
-  background-image: linear-gradient(to left, rgba(0,0,0,.6), rgba(0,0,0,.6)), url(/assets/parallax.jpg);
+  background-image: linear-gradient(to left, rgba(0,0,0,.6), rgba(0,0,0,.6)), url(/assets/parallax.webp);
   padding: 2.5rem 0;
   margin-bottom: 1.5rem;
 }

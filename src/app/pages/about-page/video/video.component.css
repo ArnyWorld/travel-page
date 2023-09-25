@@ -20,12 +20,12 @@
     font-family: var(--primary-font);
     font-weight: bold;
     font-size: 1.5rem;
-}
-video{
-    width: auto;
-    display: block;
-    object-position: center;
-}
+  }
+  .video{
+      width: auto;
+      display: block;
+      object-position: center;
+  }
 }
 /*desktop first*/
 @media(768px <= width <1200px ){
